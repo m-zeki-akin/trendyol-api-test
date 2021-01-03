@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="trendyol-api-test">
+        <parameter name="author" value="George Orwell"/>
+        <parameter name="title" value="1984"/>
+        <groups>
+            <run>
+                <include name="regular"/>
+                <include name="before test add one book"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.trendyolapi.test.integration.test.tests.MySuite"/>
+        </classes>
+    </test> <!-- trendyol-api-test -->
+</suite> <!-- Default Suite -->
